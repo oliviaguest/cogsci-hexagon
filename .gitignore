@@ -1,0 +1,11 @@
+# ignore synctex files
+*.synctex.gz
+
+# don't save compiled pdfs
+*.pdf
+
+# ignore auxiliary build files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log

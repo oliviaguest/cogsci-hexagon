@@ -1,7 +1,7 @@
 \documentclass[]{standalone}
 \usepackage{txfonts}
 \usepackage{pgfplots} 
- \usepackage{times}
+\usepackage{times}
 \usepackage{tikz}
 \pgfplotsset{compat=1.18} 
 \usetikzlibrary{fit, shapes, calc}
@@ -18,34 +18,34 @@
   \BODY
 }%
 \begin{document}%
-\tikzstyle{every node}=[inner sep=0.5mm, align=center]
+\tikzstyle{every node}=[inner sep=1mm, align=center]
 \tikzstyle{every path}=[line width=0.33mm]
-\begin{scaletikzpicturetowidth}{6cm}%
+\begin{scaletikzpicturetowidth}{8cm}%
 \tikzset{font=\fontfamily{phv}\selectfont}%%%%%%%<----by @Zarko's comment
 \begin{tikzpicture}
 [scale=\tikzscale]%
     \node (phil) at (90:3) {Philosophy};
     \node (psych) at (150:3) {Psychology};
-    \node (ai) at (210:3) {Artificial \\ Intelligence\par};
-    \node (neuro) at (270:3) {Neuroscience};
+    \node (pe) at (210:3) {Political \\ Economy\par};
+    \node (polsci) at (270:3) {Political \\ Science\par};
     \node (anthro) at (330:3) {Anthropology};
     \node (ling) at (30:3) {Linguistics};
-    \draw (phil) -- (psych);
-    \draw (phil) -- (ling);
-    \draw (psych) -- (ling);
-    \draw (psych) -- ($(psych)!2.4cm!(ai)$); % this is here to fix ugliness with f in Artificial being too close to the line, if you make a different label for this node, try:
-    % \draw (psych) -- (ai); 
-    \draw (psych) -- (anthro);
-    \draw (psych) -- (neuro);
-    \draw (ai) -- (ling);
-    \draw (ai) -- (neuro);
-    \draw (neuro) -- (ling);
-    \draw (neuro) -- (anthro);
-    \draw (anthro) -- (ling);
+    \draw (phil) -- (psych) node [midway, above=3pt, fill=white] {(7)};
+    \draw (phil) -- (ling) node [midway, above=3pt, fill=white] {(8)};
+    \draw (psych) -- (ling) node [near end, above, fill=white] {(6)};
+    % \draw (psych) -- ($(psych)!2.4cm!(pe)$); % this is here to fix ugliness with f in Artificial being too close to the line, if you make a different label for this node, try:
+    \draw (psych) -- (pe) node [midway, left=2pt, fill=white] {(4)}; 
+    \draw (psych) -- (anthro)  node [near start, above, fill=white] {(10)};
+    \draw (psych) -- (polsci) node [near end, below=2pt, fill=white] {(3)};
+    \draw[dashed] (pe) -- (ling)  node [near end, above, fill=white] {(5)};
+    \draw (pe) -- (polsci) node [midway, below=3pt, fill=white] {(1)};
+    \draw (polsci) -- (ling) node [near start, below=2pt, fill=white] {(2)};
+    \draw (polsci) -- (anthro) node [midway, below=3pt, fill=white] {(11)};
+    \draw (anthro) -- (ling) node [midway, right=2pt, fill=white] {(9)};
     \draw[dashed] (phil) -- (anthro);
-    \draw[dashed] (phil) -- (neuro);
-    \draw[dashed] (phil) -- (ai);
-    \draw[dashed] (ai) -- (anthro);
+    \draw[dashed] (phil) -- (polsci);
+    \draw[dashed] (phil) -- (pe);
+    \draw[dashed] (pe) -- (anthro);
 \end{tikzpicture}%
 \end{scaletikzpicturetowidth}%
 \end{document}%
