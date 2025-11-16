@@ -1,9 +1,9 @@
 ![The cognitive science hexagon](/hexagon.png)
 
 # Description
-A visual depiction of the connections between the Cognitive Sciences written in [TikZ](https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ) by [Olivia Guest](https://oliviaguest.com). This figure is derived from the original put forth by the Sloan Foundation in 1978 and reproduced from Figure 4 in Pléh and Gurova, 2013. Different versions of it over time have used ‘Artificial intelligence’ (as above) instead of ‘Computer Science’ and vice versa (cf. Miller, 2003).
+A visual depiction of the connections between the Cognitive Sciences written in [TikZ](https://en.wikibooks.org/wiki/LaTeX/PGF/TikZ) by [Olivia Guest](https://olivia.science). This figure is derived from the original put forth by the Sloan Foundation in 1978 and reproduced from Figure 4 in Pléh and Gurova, 2013. Different versions of it over time have used ‘Artificial intelligence’ (as above) instead of ‘Computer Science’ and vice versa (cf. Miller, 2003).
 
-As used in: van Rooij, I., Guest, O., Adolfi, F. G., de Haan, R., Kolokolova, A., & Rich, P. (2023). [Reclaiming AI as a theoretical tool for cognitive science.](https://doi.org/10.31234/osf.io/4cbuv)
+As used in: van Rooij, I., Guest, O., Adolfi, F. G., de Haan, R., Kolokolova, A., & Rich, P. (2024). [Reclaiming AI as a theoretical tool for cognitive science.](https://doi.org/10.1007/s42113-024-00217-5) Computational Brain & Behavior.   
 
 
 # References
